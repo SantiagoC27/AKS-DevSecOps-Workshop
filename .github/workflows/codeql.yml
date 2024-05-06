@@ -60,7 +60,7 @@ jobs:
 
     - name: Build Java
       run: |
-        mvn clean package -f tools/deploy/module2/pom.xml
+        mvn clean package -x -f tools/deploy/module2/pom.xml
         
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
